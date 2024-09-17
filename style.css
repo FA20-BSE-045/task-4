@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color:#263149;
+}
+
+/* Heading styles */
+h1 {
+  font-size: 60px; /* Adjusted for laptop screens */
+}
+
+h1, h2, h3 {
+  color: #ff3d00;
+  font-family: Oswald, sans-serif;
+}
+
+h2 {
+  font-size: 40px; /* Adjusted for laptop screens */
+}
+
+/* Hero section */
+.hero {
+  background-image: url('mountain.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  filter: blur();
+}
+
+.overlay {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-title {
+  font-size: 2.5rem; /* Adjusted for better scaling on laptops */
+  color: white;
+}
+
+/* Services section----experience */
+.services {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 1;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  padding: 20px;
+  gap: 20px; /* Increased gap for better spacing */
+}
+/*experience-card*/
+.service-card {
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  max-width: 250px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+}
+
+.service-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.service-card h3 {
+  margin: 15px 0;
+  color: #263547;
+}
+
+.service-card a {
+  color: #ff3d00;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Destinations section */
+.destinations {
+  padding: 50px;
+  background-color: #6C919D;
+  text-align: center;
+  color: white;
+  margin-top: 40%;
+}
+
+.destinations h2 {
+  margin-bottom: 20px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 50px; /* Adjusted for laptop */
+}
+
+.phone-number {
+  color: #ff3d00;
+}
+
+/* Destination grid for laptop screens */
+.destination-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns for large screens */
+  gap: 20px;
+  width: 100%;
+  padding: 40px;
+}
+
+.destination-card {
+  position: relative;
+}
+
+.destination-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.destination-card h3 {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* Large cards for featured destinations */
+.large {
+  grid-column: span 2;
+  height: 100%;
+}
+
+.destination-card.large img {
+  height: 320px;
+}
+
+.destination-card.small img {
+  height: 150px;
+}
+
+/* Services section----experience */
+/* Overall section container */
+.Experience {
+  display: flex;
+  flex-direction: column; /* Stack heading and cards vertically */
+  align-items: center; /* Center items horizontally */
+  padding: 40px;
+  background-color:#CAD3E6;
+  text-align: center;
+}
+
+/* Header section styling */
+.Experience-header {
+  text-align: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.Experience-header h4 {
+  margin-bottom: 10px; /* Add space below the heading */
+}
+
+/* Experience cards container */
+.Experience-cards {
+  display: flex; /* Use flexbox to align cards horizontally */
+  justify-content: space-around; /* Space cards evenly */
+  gap: 10px; /* Reduced gap between cards */
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  width: 100%;
+}
+
+/* Experience card styles */
+.Experience-card {
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  max-width: 250px;
+  transition: transform 0.3s;
+}
+
+.Experience-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.Experience-card h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: #263547;
+}
+
+.Experience-card p {
+  margin-bottom: 10px;
+}
+
+.Experience-card a {
+  color: #ff3d00;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 10px;
+}
+
