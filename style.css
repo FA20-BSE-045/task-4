@@ -7,12 +7,12 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background-color:#263149;
+  background-color: #263149;
 }
 
 /* Heading styles */
 h1 {
-  font-size: 60px; /* Adjusted for laptop screens */
+  font-size: 60px; /* Adjusted for larger screens */
 }
 
 h1, h2, h3 {
@@ -31,7 +31,6 @@ h2 {
   background-position: center;
   height: 100vh;
   position: relative;
-  filter: blur();
 }
 
 .overlay {
@@ -59,7 +58,8 @@ h2 {
   padding: 20px;
   gap: 20px; /* Increased gap for better spacing */
 }
-/*experience-card*/
+
+/* Service card styling */
 .service-card {
   background-color: white;
   padding: 20px;
@@ -152,14 +152,13 @@ h2 {
   height: 150px;
 }
 
-/* Services section----experience */
-/* Overall section container */
+/* Experience section */
 .Experience {
   display: flex;
   flex-direction: column; /* Stack heading and cards vertically */
-  align-items: center; /* Center items horizontally */
+  align-items: center;
   padding: 40px;
-  background-color:#CAD3E6;
+  background-color: #CAD3E6;
   text-align: center;
 }
 
@@ -217,3 +216,88 @@ h2 {
   margin-top: 10px;
 }
 
+/* Media Queries */
+
+/* Tablets (up to 992px) */
+@media (max-width: 992px) {
+  h1 {
+    font-size: 48px;
+  }
+  h2 {
+    font-size: 36px;
+  }
+
+  .destination-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+    margin-top: 250%;
+  }
+
+  .services {
+    flex-direction: column; /* Stack services vertically */
+    height: 100vh;
+    align-items: center;
+  }
+
+  .hero {
+    height: 80vh; /* Adjust hero height */
+  }
+}
+
+/* Mobile devices (up to 768px) */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  .hero {
+    height: 70vh;
+  }
+
+  .destination-grid {
+    grid-template-columns: 1fr; /* Single column for mobile */
+    
+  }
+
+  .services {
+    flex-direction: column;
+    position: static;
+    transform: none;
+  }
+
+  .service-card {
+    margin-bottom: 20px;
+  }
+
+  .Experience-cards {
+    flex-direction: column;
+  }
+
+  .Experience-card {
+    max-width: 100%;
+  }
+}
+
+/* Small mobile devices (up to 480px) */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .hero-title {
+    font-size: 1.5rem;
+  }
+
+  .destination-grid {
+    padding: 20px;
+    padding-top: 300%;
+   
+  }
+
+  .service-card {
+    padding: 15px;
+  }
+}
